@@ -41,10 +41,9 @@
 /*mobile portrait layout*/
 @media only screen and (max-width: 479px) {
     #nav_menu {
-        display: block;
-        width: 16.66%;
+        display: flex;
     }
-    #mobile_menu {display: block; }
+    #mobile_menu {display: flex; }
     body {
         width: 100%;
         margin: 0;
