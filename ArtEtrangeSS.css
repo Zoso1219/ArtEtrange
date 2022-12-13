@@ -36,6 +36,49 @@
         font-size: 1em;
         margin-left: 0;
     }
+    
+       /*Adjust the style for the mobile navigation menu*/
+    #nav_menu ul {
+        list-style: none;       /*Remove bullets from all ul elements*/
+        position: relative;     /*For positioning submenus*/
+    }
+
+    #nav_menu ul li {
+        float: left;            /*Display items horizontally*/
+    }
+
+#nav_menu ul ul {
+        display: none;          /*Don't display submenus until hover over li*/
+        position: absolute;
+        top: 100%;              /*Position submenu at bottom of main menu*/
+    }
+
+    #nav_menu ul ul li { 
+        float: none;            /*Display submenus vertically*/
+    }
+
+    #nav_menu ul li:hover > ul { /*Select ul child of li element*/
+        display: block;         /*Display submenu over block element*/
+    }
+
+    #nav_menu > ul::after {
+        content: "";            /*Add empty content to the end of the first ul*/
+        display: block;         /*Display that content as a block element*/
+        clear: both;            /*Stop the floating of the li elements*/
+        position: absolute;
+    }
+
+    #nav_menu ul li a {
+        text-align: center;
+        display: block;
+        width: 100px;
+        padding: 1em 0;         /*Padding above and below a elements*/
+        text-decoration: none;
+        background-color: rgba(237, 142, 83, 0.922);
+        color: white;
+        font-weight: bold;
+        border-right: 2px solid white;
+    }
 }
 
 /*font for Colonna*/
