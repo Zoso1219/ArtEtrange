@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Chaleur Gallery Web Page
+Use: Show Chaleur Gallery
+Author: Erin Hamby
+School/Term: Southern Illinois University, Fall 2022
+Developed: November 14, 2022
+Tested: November 14, 2022: Passed on Edge and Chrome browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Art Etrange | Chaleur Gallery</title>
+        <link rel="stylesheet" href="ArtEtrangeSS.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <link rel="shortcut icon" href="favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <!--Logo image-->
+    <br>
+    <figure>
+        <div id="logo"></div>
+    </figure>
+<br>
+    <h1>Art Etrange</h1>
+<br>
+    <p>À vaillant coeur rien d'impossible. -Jacques Cœur</p>
+    <p>"For a valiant heart nothing is impossible."</p>
+    <br>
+    </header>
+    <br>
+
+    <!--Navigation Menu-->
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="events.htm">Events</a></li>
+            <li><a href="galleries.htm">Galleries</a>
+                <ul>
+                    <li><a href="chaleur.htm">Chaleur</a></li>
+                    <li><a href="curiosite.htm">Curiosité</a></li>
+                    <li><a href="vaillant.htm">Vaillant</a></li>
+                </ul>
+            <li><a href="about.htm">About the Artist</a></li>
+            <li><a href="commission.htm">Commission Order Form</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+
+<br>
+
+<!--Chaleur Gallery-->
+<h1>Chaleur</h1>
+
+<br>
+
+<!--Melancholy-->
+<figure>
+    <div id="chaleur_melancholy"></div>
+    <figcaption>Melancholy - Abstract Warm Mixed Media Painting.</figcaption>
+</figure>
+</body>
+</html>
