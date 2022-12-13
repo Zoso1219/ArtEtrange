@@ -19,8 +19,14 @@
 
 /*mobile landscape to table portrait*/
 @media only screen and (max-width: 767px) {
-    #nav_menu {display: block;}
-    #mobile_menu {display: block;}
+    #nav_menu {
+        display: block;
+        width: 70%;
+    }
+    #mobile_menu {
+        display: block;
+        width: 70%;
+    }
     body {
         width: 100%;
         margin: 0;
