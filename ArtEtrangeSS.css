@@ -38,6 +38,27 @@
     }
 }
 
+/*mobile portrait layout*/
+@media only screen and (max-width: 479px) {
+    #nav_menu {display: none; }
+    #mobile_menu {display: block;}
+    body {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+    header, footer, p {text-align: center; }
+    footer p {margin-right: 0; }
+    header h2 {
+        font-size: 1.625em;
+        margin: .4em 0 .25em 0;
+    }
+    header h3 {
+        font-size: 1em;
+        margin-left: 0;
+    }
+}
+
 
 /*font for Colonna*/
 @font-face {
