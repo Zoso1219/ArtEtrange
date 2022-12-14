@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Commission Request Web Page
+Use: Submit requests for art commissions
+Author: Erin Hamby
+School/Term: Southern Illinois University, Fall 2022
+Developed: November 14, 2022
+Tested: November 14, 2022: Passed on Edge and Chrome browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Commission Order Form</title>
+        <link rel="stylesheet" href="ArtEtrangeSS.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <link rel="shortcut icon" href="favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+</head>
+<body>
+ <header>
+    <h1>Commission Order Form</h1>
+</header>
+
+    <!--Navigation Menu-->
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="events.htm">Events</a></li>
+            <li><a href="galleries.htm">Galleries</a>
+                <ul>
+                    <li><a href="chaleur.htm">Chaleur</a></li>
+                    <li><a href="curiosite.htm">Curiosité</a></li>
+                    <li><a href="vaillant.htm">Vaillant</a></li>
+                </ul>
+            <li><a href="about.htm">About the Artist</a></li>
+            <li><a href="commission.htm">Commission Order Form</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <!--Contact us Form-->
+    <form id="contact_form" action="response.htm" method="post"><br>
+        <h2>Artwork Commission Form</h2><br>
+        <p>Please fill out the information below on the type of art you would like, and we will reach out as soon as possible.</p><br>
+        <br>
+        <fieldset>
+            <legend>Contact Form</legend>
+        <p>Full Name: <input type="text" id="name" minlength="15" maxlength="25" required></p>
+        <p>Address: <input type="text" id="address" minlength="15" maxlength="50" required></p>
+        <p>City: <input type="text" id="city" minlength="4" maxlength="25" required></p>
+        <p>State: <input type="text" id="state" minlength="2" maxlength="25" required></p>
+        <p>Zip Code: <input type="text" id="zip" minlength="5" maxlength="10" required
+            pattern="\d{5}([\-]\d{4})?"></p>
+        <p>Phone Number: <input type="tel" id="phone" minlength="10" maxlength="12" required
+            pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+            title="Must be 999-999-9999"></p>
+        <p>Email Address: <input type="email" id="email" minlength="10" maxlength="25" required></p>
+        <p>Request Date: <input type="date" id="submission" required
+            pattern="[01]?\d\/[0-3]\d\/\d{4}"></p>
+        <fieldset> 
+        <legend>Type of Media: </legend>
+        <input type="radio" name="sculpture" value="sculpture">Sculpture<br>
+        <input type="radio" name="painting" value="painting">Painting<br>
+        <input type="radio" name="sketch" value="sketch">Sketch<br>
+        <input type="radio" name="watercolor" value="watercolor">Watercolor<br>
+        <input type="radio" name="sculpture" value="sculpture">Sculpture<br>
+        </fieldset>
+        <fieldset>
+        <legend>Color Scheme: </legend>
+        <label for="firstcolor">Choose your first color:</label>
+        <input type="color" id="firstcolor" value="#ffffff"><br>
+        <label for="secondcolor">Choose your second color:</label>
+        <input type="color" id="secondcolor" value="#ffffff"><br>
+        <label for="thirdcolor">Choose your third color:</label>
+        <input type="color" id="thirdcolor" value="#ffffff"><br>
+        <label for="fourthcolor">Choose your fourth color:</label>
+        <input type="color" id="fourthcolor" value="#ffffff"><br>
+        </fieldset>
+        <fieldset>
+        <legend>Size: </legend>
+        <input type="radio" name="small" value="small">Small: 4in. x 6in.<br>
+        <input type="radio" name="medium" value="medium">Medium: 8in. x 12 in.<br>
+        <input type="radio" name="large" value="large">Large: 12in. x 18 in.<br>
+        </fieldset>
+        <p>Message:</p><br>
+        <textarea id="message" required minlength="20" maxlength="500"
+            placeholder="Please enter a description of what you would like.">
+        </textarea><br>
+        <legend>Reference Photos: </legend><br>
+        <input type="file" id="fileupload" accept="image/jpeg, image/gif">
+        <br>
+        <br>
+        <input type="button" id="submit" value="Submit">
+        <input type="button" id="reset" value="Reset">
+    </fieldset>
+    </form>
+</body>
+</html>
