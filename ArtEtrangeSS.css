@@ -318,6 +318,7 @@ ol li {
 /*Display the mobile menu*/
 #mobile_menu { 
     display: block; 
+    width: 80%;
 }
 
 /*Design Table*/
