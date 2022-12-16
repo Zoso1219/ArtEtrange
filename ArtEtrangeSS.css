@@ -145,8 +145,8 @@ img {
 /*Adjust the style for the featured art*/
 #featured {
     width: 90%;
-    max-width: 400px;
-    height: 574px;
+    max-width: 260px;
+    height: 373px;
     border: 5px solid rgba(79, 7, 7, 0.744);
     border-radius: 20px;
     margin: 10px;
