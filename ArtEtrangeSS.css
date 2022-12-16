@@ -262,6 +262,7 @@ img {
     height: 200px;
     background-image: url("logo.png");
     text-align: center;
+    margin: auto;
 }
 
 /*Adjust style for the figure*/
