@@ -41,9 +41,13 @@
 
 /*mobile portrait*/
 @media only screen and (max-width: 640px) {
-    #nav_menu {display: none; }
+    #nav_menu {display: block; }
     #mobile_menu {display: block; }
-    #logo {width: 80%}
+    #logo {
+        width: 50%
+        background-image: url("logo.png");
+        text-align: center;
+    }
     body {
         width: 100%;
         margin: 0;
