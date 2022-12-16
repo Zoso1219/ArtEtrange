@@ -22,9 +22,10 @@
     #nav_menu {display: none; }
     #mobile_menu {display: block; width: 90%; }
     body {
-        width: 100%;
+        width: 90%;
         margin: 0;
         border: none;
+        #logo {width: 50%}
     }
     header, footer, p {text-align: center; }
     footer p {margin-right: 0; }
