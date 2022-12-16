@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Chaleur Gallery Web Page
+Use: Show Chaleur Gallery
+Author: Erin Hamby
+School/Term: Southern Illinois University, Fall 2022
+Developed: November 14, 2022
+Tested: November 14, 2022: Passed on Edge and Chrome browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Art Etrange | Chaleur Gallery</title>
+        <link rel="stylesheet" href="ArtEtrangeSS.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <link rel="shortcut icon" href="favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <!--Logo image-->
+    <br>
+    <div id="logo"></div>
+<br>
+    <p>À vaillant coeur rien d'impossible. -Jacques Cœur</p>
+    <p>"For a valiant heart nothing is impossible."</p>
+    <br>
+    </header>
+    <br>
+
+    <!--Navigation Menu-->
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="events.htm">Events</a></li>
+            <li><a href="about.htm">About the Artist</a></li>
+            <li><a href="galleries.htm">Galleries</a>
+                <ul>
+                    <li><a href="chaleur.htm">Chaleur</a></li>
+                    <li><a href="curiosite.htm">Curiosité</a></li>
+                    <li><a href="vaillant.htm">Vaillant</a></li>
+                </ul>
+            <li><a href="commission.htm">Commission Order Form</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+
+<br>
+
+<!--Chaleur Gallery-->
+<h1>Chaleur</h1>
+
+<br>
+    <img src="chaleur_melancholy.jpg">
+    <figcaption>Melancholy - Abstract Warm Mixed Media Painting.</figcaption>
+    <h2>Melancholy</h2>
+    <p>2017</p>
+    <p>Medium: Mixed Media (Acrylic paint, dyes, and other oil-based paint) on canvas.</p>
+    <p>18in x 24in.</p>
+    <p>Strong and unique artwork rich in textures, colors and shapes, with a burst of life and fresh visual identity.</p>
+<br>
+    <img src="chaleur_blossomhills.png">
+    <figcaption>Blossom Hills- Acrylic Paint.</figcaption>
+    <h2>Blossom Hills</h2>
+    <p>2019</p>
+    <p>Medium: Acrylic on canvas</p>
+    <p>3ft x 5ft.</p>
+    <p>Welcome to a fantasy Fall landscape. This painting is bold and highly textured. I used brushes to blend the background, 
+    with palette knife strokes to create crisp bright contrasts and movement. The painting has metallic highlights to catch the 
+    light.</p>
+
+<br>
+    <img src="chaleur_wave.jpg">
+    <figcaption>Wave- Murano Glass.</figcaption>
+    <h2>Wave</h2>
+    <p>2018</p>
+    <p>Medium: Murano Glass</p>
+    <p>12in x 8in.</p>
+    <p>My aesthetic embraces irregularity, experimentation, and a wide range of color combinations. The traditional Venetian 
+        cane methods and incalmo techniques can be used in new ways to create varied line widths, broken canes, and distorted 
+        patterns.</p>
+<br>
+    <img src="chaleur_warmabstract.jpg">
+    <figcaption>Warm Colors Abstract- Photograph.</figcaption>
+    <h2>Warm Colors Abstract</h2>
+    <p>2016</p>
+    <p>Medium: Photograph</p>
+    <p>4in x 6in.</p>
+    <p>Warm colors exude a feeling of warmth and energy. They are used to denote alarm, motion, light, heat, and to portray anger, 
+        fear, love, and desire.</p>
+<br>
+<br>
+<!--Footer that contains Sponsors-->
+<footer>
+    <ul id="links">
+        <li><a href="siu.html">Southern Illinois University</a></li>
+    </ul>
+</footer>
+<br>
+</body>
+</html>

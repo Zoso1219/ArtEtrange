@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Contact Us Web Page
+Use: Show contact information for the artist
+Author: Erin Hamby
+School/Term: Southern Illinois University, Fall 2022
+Developed: November 14, 2022
+Tested: November 14, 2022: Passed on Edge and Chrome browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="ArtEtrangeSS.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <link rel="shortcut icon" href="favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+</head>
+<body>
+ <!--Header-->
+ <header>
+    <!--Logo image-->
+<br>
+<div id="logo"></div>
+<br>
+<p>À vaillant coeur rien d'impossible. -Jacques Cœur</p>
+<p>"For a valiant heart nothing is impossible."</p>
+<br>
+</header>
+<br>
+
+<!--Navigation Menu-->
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.htm">Home</a></li>
+        <li><a href="events.htm">Events</a></li>
+        <li><a href="about.htm">About the Artist</a></li>
+        <li><a href="galleries.htm">Galleries</a>
+            <ul>
+                <li><a href="chaleur.htm">Chaleur</a></li>
+                <li><a href="curiosite.htm">Curiosité</a></li>
+                <li><a href="vaillant.htm">Vaillant</a></li>
+            </ul>
+        <li><a href="commission.htm">Commission Order Form</a></li>
+        <li><a href="contact.htm">Contact</a></li>
+    </ul>
+
+<br>
+
+<h1>Contact Information</h1>
+<br>
+<main>
+<div id="contact"></div>
+</main>
+<aside>
+<!--Contact information and Hours-->
+<h3>Contact Information</h3>
+<p>Email:ArtEtrange@gmail.com</p>
+<p>Fax:+1-800-554-2232</p>
+<br>
+<h3>Hours of Operation</h3>
+<p>Monday-Friday: 8:00AM CST-5:00PM CST</p>
+<p>Saturday & Sunday: Closed</p>
+</aside>
+<br>
+
+<!--Contact Form-->
+<fieldset>
+<form id="contact_form" action="response.htm" method="post">
+    <br>
+    <h2>Contact Us</h2><br>
+    <p>Please fill out the information below, and we will reach out as soon as possible.</p><br>
+    <br>
+    <p>Full Name: <input type="text" id="name" minlength="15" maxlength="25" required></p>
+    <p>Phone Number: <input type="tel" id="phone" minlength="10" maxlength="12" required
+        pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+        title="Must be 999-999-9999"></p>
+    <p>Email Address: <input type="email" id="email" minlength="10" maxlength="25" required></p>
+    <br>
+    <input type="button" id="submit" value="Submit"/>
+    <input type="button" id="reset" value="Reset"/>
+</fieldset>
+
+<!--Footer that contains Sponsors-->
+<footer>
+    <ul id="links">
+        <li><a href="siu.html">Southern Illinois University</a></li>
+    </ul>
+</footer>
+<br>
+</body>
+</html>

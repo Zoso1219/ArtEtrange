@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Vaillant Gallery Web Page
+Use: Show Vaillant Gallery
+Author: Erin Hamby
+School/Term: Southern Illinois University, Fall 2022
+Developed: November 14, 2022
+Tested: November 14, 2022: Passed on Edge and Chrome browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Art Etrange | Vaillant Gallery</title>
+        <link rel="stylesheet" href="ArtEtrangeSS.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <link rel="shortcut icon" href="favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+</head>
+<body>
+ <!--Header-->
+<header>
+    <!--Logo image-->
+<br>
+<div id="logo"></div>
+<br>
+<p>À vaillant coeur rien d'impossible. -Jacques Cœur</p>
+<p>"For a valiant heart nothing is impossible."</p>
+<br>
+</header>
+<br>
+
+<!--Navigation Menu-->
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.htm">Home</a></li>
+        <li><a href="events.htm">Events</a></li>
+        <li><a href="about.htm">About the Artist</a></li>
+        <li><a href="galleries.htm">Galleries</a>
+            <ul>
+                <li><a href="chaleur.htm">Chaleur</a></li>
+                <li><a href="curiosite.htm">Curiosité</a></li>
+                <li><a href="vaillant.htm">Vaillant</a></li>
+            </ul>
+        <li><a href="commission.htm">Commission Order Form</a></li>
+        <li><a href="contact.htm">Contact</a></li>
+    </ul>
+
+<br>
+
+<!--Vaillant Gallery-->
+<h1>Vaillant</h1>
+
+<br>
+<img src="vaillant_boats.jpg">
+<figcaption>Boats- Watercolor.</figcaption>
+<h2>Boats</h2>
+<p>2020</p>
+<p>Medium: Watercolor on canvas.</p>
+<p>18in x 3ft.</p>
+<p>This piece represents the valliant effort of the seamen against the unforgiving sea. Using vivid colors and sharp black lines,
+    you can almost feel the current of the ocean whisk you away.</p>
+
+<br>
+<img src="vaillant_prince.jpg">
+<figcaption>Prince- Charcoal.</figcaption>
+<h2>Prince</h2>
+<p>2012</p>
+<p>Medium: Charcoal on canvas</p>
+<p>12in x 18in.</p>
+<p>Deep hues of black and orange make the Valiant Prince pop but also fade into the page, allowing for a feeling of the seriousness
+    of war, but the softness of peace. </p>
+
+<br>
+<img src="vaillant_woman.jpg">
+<figcaption>Woman- Bronze Sculpture.</figcaption>
+<h2>Woman</h2>
+<p>2013</p>
+<p>Medium: Bronze Metal</p>
+<p>18in x 18.5in.</p>
+<p>A spectacular bronze sculpture entitled Woman. Bronze is mounted on a thick piece of walnut with beautiful graining. </p>
+
+<br>
+<img src="vaillant_continuity.jpg">
+<figcaption>Continuity- Bronze Sculpture.</figcaption>
+<h2>Continuity</h2>
+<p>2014</p>
+<p>Medium: Bronze Metal</p>
+<p>46in x 35in.</p>
+<p>This work aims to break down blocks of movement and convert them into curves that extended past the shape of a human body, 
+    before reassembling them as a forward-marching figure. </p>
+<br>
+<br>
+<!--Footer that contains Sponsors-->
+<footer>
+<ul id="links">
+    <li><a href="siu.html">Southern Illinois University</a></li>
+</ul>
+</footer>
+<br>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: About the Artist Web Page
+Use: Show information about the artist
+Author: Erin Hamby
+School/Term: Southern Illinois University, Fall 2022
+Developed: November 14, 2022
+Tested: November 14, 2022: Passed on Edge and Chrome browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Art Atrange | About the Artist</title>
+        <link rel="stylesheet" href="ArtEtrangeSS.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <link rel="shortcut icon" href="favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+</head>
+<body>
+ <!--Header-->
+ <header>
+    <!--Logo image-->
+<br>
+<div id="logo"></div>
+<br>
+<p>À vaillant coeur rien d'impossible. -Jacques Cœur</p>
+<p>"For a valiant heart nothing is impossible."</p>
+<br>
+</header>
+<br>
+
+<!--Navigation Menu-->
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.htm">Home</a></li>
+        <li><a href="events.htm">Events</a></li>
+        <li><a href="about.htm">About the Artist</a></li>
+        <li><a href="galleries.htm">Galleries</a>
+            <ul>
+                <li><a href="chaleur.htm">Chaleur</a></li>
+                <li><a href="curiosite.htm">Curiosité</a></li>
+                <li><a href="vaillant.htm">Vaillant</a></li>
+            </ul>
+        <li><a href="commission.htm">Commission Order Form</a></li>
+        <li><a href="contact.htm">Contact</a></li>
+    </ul>
+
+<br>
+
+<!--About the Artist-->
+<h1>About the Artist</h1>
+<figure>
+    <div id="artist"></div>
+</figure>
+<h2>Life and Career</h2>
+<p>Born in Toulouse and received a Diplôme national supérieur d'expression plastique from the Ecole Pilote Internationale d'Arte et de
+     Recherche. I lived in Paris and taught at the École supérieure d'art et design Le Havre-Rouen. I have produced watercolors and 
+     drawings, as well as murals, sculptures, and photographs. I have had solo shows at the Centre d'Art Neuchâtel and at galleries 
+     in Vence, Nice, Paris and Marseille, and have participated in group exhibitions at the Yerba Buena Center for the Arts, at the 
+     Musée des Beaux-Arts de Tourcoing, at the Musée d'art contemporain de Lyon, at the BAWAG Foundation in Vienna, at La Criée in
+      Rennes and at the Venice Biennale in 2003.</p>
+
+    <p>In 2004, I was one of the fourteen "founder and featured" artists in The Stuckists Punk Victorian held at the Walker Art 
+        Gallery for the Liverpool Biennial. I promoted the second Paris Stuckist show in 2005.</p>
+    <p>In 2005, I illustrated a children's book. In 2006, the Tarot Museum in Bologna acquired a Tarot deck, which I had designed in 1999.</p>
+
+<h2>Art</h2>
+<p>I chose my themes of myths, legends and fairytales as I find reality terribly sad and cruel. I need to escape to another dimension. 
+    My style has been likened to Chagall's. A large body of my paintings are of Greek mythology, composing a mass of figurative detail. I respect 
+    the force of nature.</p>
+
+    <p>Research for a painting is a combination of academic books on the subject and infant picture books, which leads to a few weeks'
+         mental preparation for the main elements. The first part of the painting is the central character, around which other images 
+         evolve in an imaginative process to discover images like you might discover figures in a cloud. It takes me three months to 
+         complete the painting.</p>
+
+<br>
+
+<!--Footer that contains Sponsors-->
+<footer>
+    <ul id="links">
+        <li><a href="siu.html">Southern Illinois University</a></li>
+    </ul>
+</footer>
+<br>
+</body>
+</html>
