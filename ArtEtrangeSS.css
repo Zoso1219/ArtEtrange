@@ -20,12 +20,12 @@
 /*mobile landscape to table portrait*/
 @media only screen and (max-width: 767px) {
     #nav_menu {display: none; }
-    #mobile_menu {display: block; width: 90%; }
+    #mobile_menu {display: block; width: 80%; }
+    #logo {width: 90%}
     body {
         width: 90%;
         margin: 0;
         border: none;
-        #logo {width: 50%}
     }
     header, footer, p {text-align: center; }
     footer p {margin-right: 0; }
