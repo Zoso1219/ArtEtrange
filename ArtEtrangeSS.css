@@ -21,7 +21,7 @@
 @media only screen and (max-width: 767px) {
     #nav_menu {display: none; }
     #mobile_menu {display: block; }
-    #logo {width: 90%}
+    #logo {width: 50%}
     body {
         width: 90%;
         margin: 0;
@@ -41,7 +41,7 @@
 
 /*mobile portrait*/
 @media only screen and (max-width: 640px) {
-    #nav_menu {display: block; }
+    #nav_menu {display: block;}
     #mobile_menu {display: block; }
     #logo {
         width: 50%
